@@ -1,0 +1,19 @@
+.footer {
+  background-color: #717A80;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer i {
+  font-size: 40px;
+  color: white;
+  display: inline-block;
+  transition: 1s;
+}
+
+.footer i:hover {
+  font-size: 40px;
+  color: black;
+  display: inline-block;
+}

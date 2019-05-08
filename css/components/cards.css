@@ -1,0 +1,34 @@
+.card-projects {
+  display: flex;
+  border: 1px solid rgba(0,0,0,0.1);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  align-items: center;
+  margin: 10px 0;
+  max-width: 350px;
+  padding: 10px;
+}
+
+.card-projects .project {
+  font-size: 35px;
+  padding: 0 16px;
+  text-shadow: 2px 3px 1px #e4eff9;
+}
+
+.card-projects img {
+  width: 120px;
+  object-fit: cover;
+}
+
+.card-projects h3 {
+  padding: 0 0 8px 16px;
+  margin: 0;
+  font-size: 20px;
+  text-align: left;
+}
+
+.card-projects p {
+  padding: 0 16px 0 16px;
+  margin: 0;
+  font-size: 16px;
+  text-align: left;
+}
