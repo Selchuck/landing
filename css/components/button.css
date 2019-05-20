@@ -1,17 +1,61 @@
-.btn-blue {
-  text-decoration: none;
-  padding: 8px 24px;
-  background-color: #939fa7;
-  color: #000000;
-  font-weight: bold;
-  display: inline-block;
-  margin: 68px 0 18px 0;
-  font-size: 24px;
-  border-radius: 4px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-  transition: 0.3s;
+.button-rounded-hover {
+  color: white;
+  background-color: #68868c;
+  font-weight: 600px;
+  border: 0;
+  border-radius: 26px;
+  padding: 1rem 1rem;
+  text-transform: uppercase;
+  position: inline-block;
+  overflow: hidden;
+  font-size: 14px;
+  letter-spacing: 1px;
+  transition: all 0.9s ease;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
 }
 
-.btn-blue:hover {
-    background-color: #717A80;
+.button-rounded-hover:before {
+  color: white;
+  display: inline-block;
+  opacity: 0;
+  content: "";
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border-radius: inherit;
+  background-color: white;
+  transition: all 0.9s;
+  -webkit-transform: translateX(-100%);
+      -ms-transform: translateX(-100%);
+          transform: translateX(-100%);
 }
+
+.button-rounded-hover:after {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  border: 4px solid #fff;
+  content: '';
+  border-radius: inherit;
+}
+
+.button-rounded-hover:hover,
+.button-rounded-hover:focus {
+  background-color: #2e5961;
+  color: white;
+  text-decoration: none;
+}
+
+.button-rounded-hover:hover:before,
+.button-rounded-hover:focus:before {
+  -webkit-transform: translateX(0%);
+      -ms-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 0.25;
+}
+

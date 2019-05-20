@@ -1,0 +1,34 @@
+.navbar-container{
+  position: fixed;
+  width: 100vw;
+  height: 90px;
+  background-color: #00000000 transparent;
+  transition: background-color 1s ease 0s;
+}
+
+.navbar-container ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 16px;
+  overflow: hidden;
+  background-color: #fff;
+  border-bottom: 1px solid;
+}
+
+.navbar-container li {
+  float: right;
+  border-right:1px solid #ffd80a;
+}
+
+.navbar-container li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.navbar-container li a:hover {
+  color: #ffd80a;
+  transition: 1s;
+}

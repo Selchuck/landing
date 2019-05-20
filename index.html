@@ -2,72 +2,120 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>My landing page | Selchuk Karakus </title>
+  <title>Selchuk Karakus | Web Design & Development </title>
   <link rel="stylesheet" href="style.css">
-  <title>My landing page</title>
   <!-- We need this line below for responsiveness! -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="css/style.css">
+  <!-- We need this for bootstrap css library -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript">
+    $('.flip-card').click(function(){
+  $(this).find('.flip-card-inner-back').addClass('flipped').mouseleave(function(){
+    $(this).removeClass('flipped');
+  });
+  return false;
+});
+  </script>
 </head>
 <body>
+
+  <!-- navbar section -->
+  <div class="navbar-container">
+    <ul>
+      <li style="float:left"><a class="active" href="#home">HOME</a></li>
+      <li><a class="active" href="#about">ABOUT</a></li>
+      <li><a class="active" href="#contact">CONTACT</a></li>
+    </ul>
+  </div>
+
   <!-- code a Hero / Banner section -->
-  <div class="banner" style="background-image: url(images/istanbul_bogazi.jpg);">
-      <div class="banner-container">
-        <h1>Selchuk Karakus</h1>
-        <h2>London-based Website Designer and Developer</h2>
-        <a href="mailto:selchuck.karakus@gmail.com?Subject=Design%Enquiry" class="btn-blue">Contact me</a>
-      </div>
+  <div id="home">
+    <div class="banner" style="background-image: url(images/istanbul_bogazi.jpg);">
+        <div class="banner-container">
+          <div class="logotype">
+            <img src="images/logo3.png" width="500" height="500">
+          </div>
+          <!-- <a href="mailto:selchuck.karakus@gmail.com?Subject=Design%Enquiry" class="btn-white">scroll down</a> -->
+        </div>
+    </div>
   </div>
 
-  <!-- code a "How it works" section -->
-  <div class="container">
-  <h2>See below for past projects</h2>
-  <div class="container-card">
-    <div class="card-projects">
-      <div class="project">1</div>
-      <div>
-        <h3>Pub Crawl Generator</h3>
-        <p>A web-page that generates a pub crawl built with Ruby on Rails, Mapbox, JavaScript and Google Place’s API done over the final two weeks of Le Wagon.</p>
-      </div>
-    </div>
-    <div class="card-projects">
-      <div class="project">2</div>
-      <div>
-        <h3>Zappa Rentals</h3>
-        <p>Air-BnB-style platform for loaning and renting musical instruments.  App implemented searching and geocoding in Rails.</p>
-      </div>
-    </div>
-    <div class="card-projects">
-      <div class="project">3</div>
-      <div>
-        <h3>Mr Cocktail</h3>
-        <p>A 3 model app created using MVC architecture where you can store your favourite cocktails and their receipes.</p>
-      </div>
-    </div>
-  </div>
+  <!-- text-section -->
+  <div class="container-text" id="about">
+  <div class="text-section">
+    <p>A recent graduate of <strong>Le Wagon London</strong>, the world’s leading coding bootcamp teaching Full-Stack <strong>Ruby on Rails</strong>.
+    <p>
   </div>
 
-  <!-- code a footer -->
+    <div class="text-section">
+      <p>Before my love for coding began in early 2018 I did years of professional work in hospitality industry in London, where I’ve picked up key skills including <strong>communication</strong> and <strong> customer service</strong>. I'm now exploring various roles in web development looking to make tech industry my home.
+      </p>
+    </div>
+
+    <div class="text-section">
+      <p>As a career changer I believe I am abnormaly driven with a frightening big appetite, and now want to join a team to build exciting and elegant responsive websites and applications for any sector where good design makes a difference!
+      </p>
+    </div>
+
+    <div class="text-section">
+      <p>See below some past projects.</p>
+    </div>
+  </div>
+
+  <!-- flip-card card-->
+  <div class="cards" id="image1">
+    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+      <div class="flip-card-inner">
+        <div class="flip-card-inner-front" style="background-image: url(images/pub.jpg)";>
+          <span>Pub Crawl Generator</span>
+        </div>
+        <div class="flip-card-inner-back">
+          <h3 class="flip-card-inner-back-title">Pub Crawl Generator</h3>
+          <p class="flip-card-inner-back-text">A web-page that generates a pub crawl built with Ruby on Rails, Mapbox, JavaScript and Google Place’s API done over the final two weeks of Le Wagon.</p>
+          <a href="https://www.randomcheers.com/" class="button button-rounded-hover" target="_blank">Visit the site</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+      <div class="flip-card-inner">
+        <div class="flip-card-inner-front" style="background-image: url(images/zapparental.jpg)";>
+          <span>Zappa Rentals</span>
+        </div>
+        <div class="flip-card-inner-back">
+          <h3 class="flip-card-inner-back-title">Zappa Rentals</h3>
+          <p class="flip-card-inner-back-text">Air-BnB-style platform for loaning and renting musical instruments.  App implemented searching and geocoding in Rails.</p>
+          <a href="https://airbnb-maxlongbao.herokuapp.com/" class="button button-rounded-hover" target="_blank">Visit the site</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="flip-card card" ontouchstart="this.classList.toggle('hover');">
+      <div class="flip-card-inner">
+        <div class="flip-card-inner-front" style="background-image: url(images/mrcocktail.jpg)";>
+          <span>Mr Cocktail</span>
+        </div>
+        <div class="flip-card-inner-back">
+          <h3 class="flip-card-inner-back-title">Mr Cocktail</h3>
+          <p class="flip-card-inner-back-text">A 3 model app created using MVC architecture where you can store your favourite cocktails and their receipes.</p>
+          <a href="https://strawberry-surprise-24639.herokuapp.com/" class="button button-rounded-hover" target="_blank">Visit the site</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-text" id="contact">
+    <p>If you would like to talk about your requirements that you think I can help you with, see my CV, grab a coffee or find out if I can help you in any way please don't hesitate to contact me. I would gladly meet you. Please see below for how you can reach out.</p>
+  </div>
+
+  <!-- footer -->
   <div class="footer">
-      <ul class="inline-list">
-        <li>
-          <div><a href="https://www.instagram.com//" target="_blank">
-            <i class="fab fa-instagram"></i>
-          </a>
-      </div>
-        </li>
-
-        <li>
-          <a href="https://www.facebook.com//" target="_blank">
-            <i class="fab fa-facebook"></i>
-          </a>
-        </li>
-        <li>
-          <a href="mailto:selchuck.karakus@gmail.com?Subject=Design%Enquiry" target="_blank">
-            <i class="far fa-envelope"></i>
-          </a>
-        </li>
-      </ul>
+    <ul class="list">
+      <li class="details">| +44 (0)795 555 23 61</li>
+      <li class="details"><a href="mailto:selchuck.karakus@gmail.com" class="email-link"> | selchuck.karakus@gmail.com</a></li>
+      <h6>Copyright 2019. All rights reserved. | By Selchuk Karakus | www.selchuk-karakus.com</h6>
+    </ul>
   </div>
 </body>
 </html>
